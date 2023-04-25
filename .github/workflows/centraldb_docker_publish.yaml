@@ -31,6 +31,7 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
+        registry: registry.civo.app
         username: ${{ env.DOCKER_USER }}
         password: ${{ secrets.KUBEFLOWNOTEBOOKSWG_DOCKER_TOKEN }}
         
