@@ -30,14 +30,15 @@
 #MainDrawer {
     color: white;
     --app-drawer-content-container: {
-        background: var(--primary-background-color) !important;
+        background: #333A44 !important;
+        border-color: #434D5B !important;
         display: flex !important;
         flex-direction: column !important;
     }
 }
 
 app-drawer-layout {
-    --app-drawer-width: 240px;
+    --app-drawer-width: 260px;
 }
 
 app-drawer-layout[narrow] #MainDrawer {
@@ -89,8 +90,10 @@ app-drawer-layout[bleed] #MainDrawer {
     font-weight: 500;
     letter-spacing: 0.3px;
     line-height: 24px;
-    transition: background .25s;
+    /* transition: background .25s; */
     --paper-item-icon-width: 36px;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
@@ -120,14 +123,22 @@ app-drawer-layout[bleed] #MainDrawer {
 }
 
 #MainDrawer .menu-item:hover {
-    background: #ffffff1b
+    background: #434D5B;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
 #MainDrawer .iron-selected {
+    background: #434D5B;
     color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
 }
 
-#MainDrawer .iron-selected::after {
+/* #MainDrawer .iron-selected::after {
     content: '';
     display: block;
     position: absolute;
@@ -136,7 +147,7 @@ app-drawer-layout[bleed] #MainDrawer {
     left: 0;
     width: 3px;
     background: white;
-}
+} */
 
 #MainDrawer .footer {
     padding: 1.25rem;
@@ -231,6 +242,8 @@ paper-tab[link] a:hover {
 
 app-header {
     box-shadow: 0 2px 6px 1px rgba(232, 234, 237, 0.5), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    left: 260px;
+    right: 0;
 }
 
 app-header-layout {
